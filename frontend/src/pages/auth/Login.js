@@ -1,6 +1,7 @@
 import React , {useState} from 'react'
 import { Link } from 'react-router-dom';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
+import { FaSmileWink } from "react-icons/fa";
 
 // icons
 import { FaUser } from "react-icons/fa";
@@ -55,7 +56,8 @@ const Login = () => {
 	
   return (
     <div> 
-        <div>imgX</div>
+        <div className='ml-2 mt-2'><FaSmileWink/></div>
+		<div className='text-left text-center md:text-right font-extrabold'>EVENT ZZZ</div>
         <div className='flex-1 flex flex-col justify-center items-center'>
 				<form className='lg:w-2/3  mx-auto md:mx-20 flex gap-4 flex-col' 
                 onSubmit={handleSubmit}

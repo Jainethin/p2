@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 
+
 import { useMutation } from '@tanstack/react-query';
 // import toast from "react-hot-toast";
 import { MdOutlineMail } from "react-icons/md";
@@ -8,6 +9,7 @@ import { FaUser } from "react-icons/fa";
 import { MdPassword } from "react-icons/md";
 import { MdDriveFileRenameOutline } from "react-icons/md";
 import {baseURL} from '../../constant/url.js';
+import { FaSmileWink } from "react-icons/fa";
 
 const Signup = () => {
 	
@@ -63,7 +65,8 @@ const Signup = () => {
     
   return (
     <div> 
-        <div>imgX</div>
+        <div className='ml-2 mt-2'><FaSmileWink/></div>
+		<div className='text-left text-center md:text-right font-extrabold'>EVENT ZZZ</div>
         <div className='flex-1 flex flex-col justify-center items-center'>
 			<form className='lg:w-2/3  mx-auto md:mx-20 flex gap-4 flex-col' 
 			onSubmit={handleSubmit}
